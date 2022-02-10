@@ -1,4 +1,4 @@
-package com.immense.admin;
+package com.immense.admin.user;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

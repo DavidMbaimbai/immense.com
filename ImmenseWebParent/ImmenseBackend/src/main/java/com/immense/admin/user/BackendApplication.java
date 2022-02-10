@@ -1,4 +1,4 @@
-package com.immense.admin;
+package com.immense.admin.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

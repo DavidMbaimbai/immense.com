@@ -9,7 +9,7 @@
         <relativePath/>
     </parent>
     <groupId>com.common</groupId>
-    <artifactId>immensecommon</artifactId>
+    <artifactId>ImmenseCommon</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ImmenseCommon</name>
     <description>Immense Common Project</description>
