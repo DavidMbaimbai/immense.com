@@ -1,4 +1,4 @@
-package com.immnse.frontend;
+package com.immnse.frontend.site;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
