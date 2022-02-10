@@ -1,4 +1,4 @@
-package com.immense.backend.backend;
+package com.immense.admin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
