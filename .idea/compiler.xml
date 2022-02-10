@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="immensecommon" />
         <module name="backend" />
+        <module name="frontend" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="backend" options="-parameters" />
+      <module name="frontend" options="-parameters" />
       <module name="immense" options="-parameters" />
       <module name="immensecommon" options="-parameters" />
     </option>

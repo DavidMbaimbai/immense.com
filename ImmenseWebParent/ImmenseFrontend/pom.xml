@@ -3,38 +3,38 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>ImmenseWebParent</groupId>
+        <artifactId>ImmenseWebParent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>ImmenseWebParent</groupId>
-    <artifactId>ImmenseWebParent</artifactId>
+    <groupId>com.immnse</groupId>
+    <artifactId>ImmenseFrontend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ImmenseWebParent</name>
-    <description>Immense Web Parent</description>
-    <packaging>pom</packaging>
+    <name>ImmenseFrontend</name>
+    <description>Immense Frontend Project</description>
     <properties>
         <java.version>11</java.version>
     </properties>
-    <modules>
-        <module>ImmenseBackend</module>
-        <module>ImmenseFrontend</module>
-    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
