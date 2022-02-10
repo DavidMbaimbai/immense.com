@@ -9,6 +9,54 @@
     <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
 </head>
 <body>
+  <div>
+      <nav class="nav navbar-expand-lg bg-dark navbar-dark">
+          <a class="navbar-brand" th:href="@{/}">
+          <img class="thumbnail img-responsive" th:src="@{/images/immense.png}" width="60px" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="topNavbar">
+              <ul class="navbar nav">
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/users}">Users</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/categories}">Categories</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/brands}">Brands</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/products}">Products</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/customers}">Customers</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/shipping}">shipping</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/orders}">Orders</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/reports}">Sale Report</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/articles}">Articles</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/menus}">Menus</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="@{/setting}">Settings</a>
+                  </li>
+              </ul>
+
+          </div>
+      </nav>
+  </div>
   <div class="container-fluid">
       <h1>Immense Control Panel</h1>
   </div>
