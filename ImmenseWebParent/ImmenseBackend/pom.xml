@@ -8,22 +8,18 @@
         <version>2.6.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>ImmenseWebParent</groupId>
-    <artifactId>immense</artifactId>
+    <groupId>com.immense.backend</groupId>
+    <artifactId>backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ImmenseWebParent</name>
-    <description>Immense Web Parent</description>
-    <packaging>pom</packaging>
+    <name>backend</name>
+    <description>Immense Backend</description>
     <properties>
         <java.version>11</java.version>
     </properties>
-    <modules>
-        <module>ImmenseBackend</module>
-    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>
@@ -32,5 +28,14 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
