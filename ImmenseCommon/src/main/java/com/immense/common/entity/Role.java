@@ -1,12 +1,14 @@
 package com.immense.common.entity;
 
-import javax.persistence.*;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import javax.persistence.*;
 @Entity
 @Table(name = "roles")
 public class Role {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(length = 40, nullable = false, unique = true)
     private String name;
