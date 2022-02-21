@@ -1,4 +1,4 @@
-package com.immense.admin.user.user;
+package com.immense.admin.user;
 
 import com.immense.common.entity.Role;
 import org.springframework.data.repository.CrudRepository;

@@ -1,6 +1,4 @@
 package com.immense.admin.user;
-
-import com.immense.admin.user.user.UserRepository;
 import com.immense.common.entity.Role;
 import com.immense.common.entity.User;
 import org.junit.jupiter.api.Test;
@@ -9,8 +7,6 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.annotation.Rollback;
-
-import javax.persistence.EntityManager;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -82,5 +78,11 @@ public class UserRepositoryTests {
         Integer userId =2;
         userRepository.deleteById(userId);
 
+    }
+    @Test
+    public void testGetUserByEmail(){
+        String email = "davymbaimbai@gmail.com";
+        User user = userRepository.getUsersByEmail(email);
+        assertThat(user).isNotNull();
     }
 }
